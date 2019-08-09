@@ -1,0 +1,1 @@
+Band: ${band}Movie: Full Metal Jacket
