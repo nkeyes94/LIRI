@@ -92,11 +92,12 @@ inquirer.prompt([
                     console.log("Invalid. Please try again.");
                 } else {
                     spotify.search({ type: 'track', query: res.songname }).then(function(response){
+                        let date = moment(response.tracks.items[7].album.release_date).format("MM/DD/YYYY")
                         console.log("--------------------");
                         console.log("Song: "+ response.tracks.items[7].name);
                         console.log("Artist: "+ response.tracks.items[7].album.artists[0].name);
                         console.log("Album: "+ response.tracks.items[7].album.name);
-                        console.log("Released: "+ response.tracks.items[7].album.release_date);
+                        console.log("Released: "+ date);
                         console.log("---------------------");
                     })
                 }
