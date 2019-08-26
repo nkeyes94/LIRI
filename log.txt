@@ -1,1 +1,1 @@
-Band: ${band}Movie: Full Metal Jacket
+Band: ${band}Movie: Full Metal JacketSong: XanaduSong: SubdivisionsBand: ${band}Movie: Full Metal Jacket
