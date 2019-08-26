@@ -1,9 +1,39 @@
 # LIRI
 
-The application allows the user to select a specific function, and get information returned from it. For instance:
+-The application allows the user to select a specific function, and get information returned from it. For instance:
     -Selecting the "Spotify This" function will allow the user to look up specific information about an artist or song
         -[SpotifyImage](SpotifyThis.png)
     -Selecting the "Concert This" function will allow the user to look up concert information for an artist
         -[ConcertImage](ConcertThis.PNG)
     -Selecting the "Movie This" function will allow the user to look up information about a movie
         -[MovieImage](MovieThis.PNG)
+
+-Use of the application:
+    -When first launched, the user will be prompted with a name prompt, once entered the application will serve the next prompt
+    -The following prompt is a function selector
+        -There are three functions that can be selected:
+            -Concert This
+            -Spotify This
+            -Movie This
+        -Upon selecting a function, the user will then have to add in the necessary information to initiate a search. 
+            -Concert This will take a band name
+                -After submitting a band name, the app will populate with tour dates, if any are available. These results will also be saved to the log.txt file.
+                -Info returned
+                    -Band Name
+                    -Date of concert
+                    -Location 
+                    -Venue
+            -Spotify This will take an artist name or a song name
+                -After submitting, the app will populate with information about the submission query from the Spotify API. These results will also be saved to the log.txt file. 
+                -Info returned:
+                    -Song
+                    -Artist
+                    -Album
+                    -Release date
+            -Movie This will take a movie name, and return information about the movie and save it to the log.txt file.
+                -Info returned:
+                    -Movie Title
+                    -Release year
+                    -Rating (IMDB)
+                    -Actors
+                    -Brief plot summary 
